@@ -5,7 +5,7 @@ export const CallToActionNav = () => {
   return (
     <Link href="#kontakt" >
       <div className=" cursor-pointer">
-        <a className="hidden w-[11em] items-center  justify-center rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-yellow md:flex" aria-label="contact">
+        <a className="hidden w-[8em] items-center  justify-center rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-yellow md:flex" aria-label="contact">
           Contact us!
         </a>
         <a className="flex items-center justify-center rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-yellow md:hidden" aria-label="contact">

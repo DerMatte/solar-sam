@@ -3,7 +3,7 @@ import Image from "next/future/image";
 // import Logo from "../components/Logo";
 import { CallToActionNav } from "./CallToAction";
 import cn from "classnames";
-import ImgLogo from "public/img/Logo.png";
+//import Logo from "public/img/Logo.png";
 import { List, X } from "phosphor-react";
 
 import { Fragment } from "react";
@@ -17,6 +17,13 @@ const navigation = [
   { name: "Projekte", href: "/projekte", current: false },
   { name: "Über uns", href: "/ueber", current: false },
 ];
+
+const Logo = () => {
+  return (
+      <h1 className="text-xl font-bold">SolarSam</h1>
+  );
+};
+
 
 const Navbar = ({ router }) => {
   let path = router.pathname;
@@ -41,16 +48,22 @@ const Navbar = ({ router }) => {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <Link href="/">
                   <a className="flex flex-shrink-0 items-center">
-                    <Image
+                    {/* <Image
                       className="block h-10 w-auto lg:hidden"
-                      src={ImgLogo}
-                      alt="Volker Voltaik"
+                      src={Logo}
+                      alt="Solar Sam"
                     />
                     <Image
                       className="hidden h-10 w-auto lg:block"
-                      src={ImgLogo}
-                      alt="Volker Voltaik"
-                    />
+                      src={Logo}
+                      alt="Solar Sam"
+                    /> */}
+                    <div className="block h-10 w-auto lg:hidden">
+                    <h1 className="text-xl font-bold">SolarSam</h1>
+                    </div>
+                    <div className="hidden h-10 w-auto lg:block">
+                    <h1 className="text-xl font-bold">SolarSam</h1>
+                    </div>
                   </a>
                 </Link>
                 <div className="hidden sm:ml-6 sm:block">
