@@ -3,12 +3,18 @@ import { Phone } from "phosphor-react";
 
 export const CallToActionNav = () => {
   return (
-    <Link href="#kontakt" >
+    <Link href="#kontakt">
       <div className=" cursor-pointer">
-        <a className="hidden w-[8em] items-center  justify-center rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-yellow md:flex" aria-label="contact">
+        <a
+          className="hover:bg-yellow hidden w-[8em]  items-center justify-center rounded-lg bg-black px-4 py-2 font-medium text-white md:flex"
+          aria-label="contact"
+        >
           Contact us!
         </a>
-        <a className="flex items-center justify-center rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-yellow md:hidden" aria-label="contact">
+        <a
+          className="hover:bg-yellow flex items-center justify-center rounded-lg bg-black px-4 py-2 font-medium text-white md:hidden"
+          aria-label="contact"
+        >
           <Phone size={32} />
         </a>
       </div>
@@ -19,7 +25,10 @@ export const CallToActionNav = () => {
 const CallToAction = () => {
   return (
     <Link href="#kontakt">
-      <a className="flex w-[11em]  items-center justify-center rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-yellow" aria-label="contact">
+      <a
+        className="hover:bg-yellow flex  w-[11em] items-center justify-center rounded-lg bg-black px-4 py-2 font-medium text-white"
+        aria-label="contact"
+      >
         Contact
       </a>
     </Link>

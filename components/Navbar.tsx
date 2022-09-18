@@ -19,11 +19,8 @@ const navigation = [
 ];
 
 const Logo = () => {
-  return (
-      <h1 className="text-xl font-bold">SolarSam</h1>
-  );
+  return <h1 className="text-xl font-bold">SolarSam</h1>;
 };
-
 
 const Navbar = ({ router }) => {
   let path = router.pathname;
@@ -59,10 +56,10 @@ const Navbar = ({ router }) => {
                       alt="Solar Sam"
                     /> */}
                     <div className="block h-10 w-auto lg:hidden">
-                    <h1 className="text-xl font-bold">SolarSam</h1>
+                      <h1 className="text-xl font-bold">SolarSam</h1>
                     </div>
                     <div className="hidden h-10 w-auto lg:block">
-                    <h1 className="text-xl font-bold">SolarSam</h1>
+                      <h1 className="text-xl font-bold">SolarSam</h1>
                     </div>
                   </a>
                 </Link>
