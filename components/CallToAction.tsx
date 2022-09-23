@@ -1,21 +1,21 @@
 import Link from "next/link";
-import { Phone } from "phosphor-react";
+import { HandWaving } from "phosphor-react";
 
 export const CallToActionNav = () => {
   return (
     <Link href="#kontakt">
       <div className=" cursor-pointer">
         <a
-          className="hover:bg-yellow hidden w-[8em]  items-center justify-center rounded-lg bg-black px-4 py-2 font-medium text-white md:flex"
+          className="hidden w-[8em] items-center  justify-center rounded-lg bg-[#696969] px-4 py-2 font-medium text-white hover:bg-[#F2C94C] md:flex"
           aria-label="contact"
         >
-          Contact us!
+          Contact
         </a>
         <a
-          className="hover:bg-yellow flex items-center justify-center rounded-lg bg-black px-4 py-2 font-medium text-white md:hidden"
+          className="flex items-center justify-center rounded-lg bg-[#696969] px-4 py-2 font-medium text-white hover:bg-[#F2C94C] md:hidden"
           aria-label="contact"
         >
-          <Phone size={32} />
+          <HandWaving size={32} />
         </a>
       </div>
     </Link>
@@ -26,7 +26,7 @@ const CallToAction = () => {
   return (
     <Link href="#kontakt">
       <a
-        className="hover:bg-yellow flex  w-[11em] items-center justify-center rounded-lg bg-black px-4 py-2 font-medium text-white"
+        className="flex w-[11em]  items-center justify-center rounded-lg bg-[#696969] px-4 py-2 font-medium text-white hover:bg-[#F2C94C]"
         aria-label="contact"
       >
         Contact
