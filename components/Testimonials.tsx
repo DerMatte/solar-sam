@@ -65,13 +65,13 @@ const Testimonials = () => {
   }, [currentTestimonial]);
 
   return (
-    <section className="container mx-auto h-full min-h-[60vh] w-full px-8 mb-24">
+    <section className="container mx-auto mb-24 h-full min-h-[60vh] w-full px-8">
       <h3 className="pb-8 text-xl font-semibold md:text-2xl">
         What our clients say
       </h3>
       <div className="mx-auto flex h-full flex-col items-center justify-between">
         {/* <span className="absolute top-5 font-display text-4xl">{`"`}</span> */}
-        <div className="flex h-full w-3/4 md:w-1/2 flex-row items-center justify-around">
+        <div className="flex h-full w-3/4 flex-row items-center justify-around md:w-1/2">
           <button
             className="h-64 rounded py-12  px-6 text-2xl font-bold text-black/50 hover:text-black md:text-4xl"
             onClick={() => {
@@ -86,7 +86,7 @@ const Testimonials = () => {
             .map((testimonial) => (
               <div
                 key={testimonial.id}
-                className="mx-auto flex w-screen min-w-full max-w-xl flex-col items-center justify-around pt-16 ease-in-out duration-100 transition-all "
+                className="mx-auto flex w-screen min-w-full max-w-xl flex-col items-center justify-around pt-16 transition-all duration-100 ease-in-out "
               >
                 <Image
                   src={testimonial.image}
